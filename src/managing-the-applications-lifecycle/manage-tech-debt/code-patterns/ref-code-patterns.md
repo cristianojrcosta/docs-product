@@ -907,6 +907,7 @@ Meaningful descriptions in modules, public elements, entities, and input/output 
 **How to fix**  
 
 Add a description to the module that explains the purpose and identifies the concepts it contains. Add meaningful descriptions to all module's public elements, and their related parameters. The only exceptions are Entities and Structures attributes which descriptions are optional. A parameter name that already follows well-established naming conventions doesn't require a description (e.g. Id, Name, Label, Description, CreatedBy, UpdatedBy, CreatedOn, UpdatedOn).
+The analysis of the public structures within the module being analyzed does not include consumed service structures. In the case of SOAP and REST structures, it is expected that the service itself is responsible for managing these descriptions.
 
 ### Unidentified public action managing transaction
 
